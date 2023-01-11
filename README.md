@@ -5,7 +5,7 @@ This programm is mini version of bash. It was done by ashotmsryan and Vardnyan-H
 
 HERE IS HOW TO START AND RUN THE PROGRAM
 <br>
-step 1- clone it on your device (MAC OS, Linux-kali(the others are not tested)).
+   step 1- clone it on your device (MAC OS, Linux-kali(the others are not tested)).
 <br>
 step 2- open the folder and run the following command on your concol
 <br>
