@@ -3,27 +3,17 @@
 This programm is mini version of bash. It was done by ashotmsryan and Vardnyan-Hovo.
 <br>Don't judge it too strict, it is done for learning purpose
 
-HERE IS HOW TO START AND RUN THE PROGRAM
-<br>
-<p>   step 1- clone it on your device (MAC OS, Linux-kali(the others are not tested)).
+HERE IS HOW TO START AND RUN THE PROGRAM<br>
+<p>                        step 1- clone it on your device (MAC OS, Linux-kali(the others are not tested)).<br>
 </p>
-<br>
-step 2- open the folder and run the following command on your concol
-<br>
-        'make readline'
-<br>
-        this is doing 'make' and installs the last version of readline library,
-<br>
-        files can be dedected in "radline-master" and "ashhov-readline" folders.
-<br>
-step 3- run the following command
-<br>
-        'make'
-<br>
-        it would create object files and the program "minishell" also,
-<br>
-        you can also run 
-<br>
+step 2- open the folder and run the following command on your concol<br>
+        'make readline'<br>
+        this is doing 'make' and installs the last version of readline library,<br>
+        files can be dedected in "radline-master" and "ashhov-readline" folders.<br>
+step 3- run the following command<br>
+        'make'<br>
+        it would create object files and the program "minishell" also,<br>
+        you can also run <br>
         'make clean'<br>
          which delets all the object files, but the program would not be eliminated<br>
         'make fclean'<br>
