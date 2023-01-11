@@ -22,7 +22,7 @@ topdir = ..
 srcdir = .
 
 
-prefix = /Users/hvardany/Desktop/intra-uuid-f1de4657-4a93-44cd-aadb-62d171dd6793-4442160-hvardany/ashhov_readline
+prefix = /Users/amsryan/Desktop/aa/ashhov_readline
 
 datarootdir = ${prefix}/share
 
@@ -49,7 +49,7 @@ RM = rm -f
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 
-BUILD_DIR = /Users/hvardany/Desktop/intra-uuid-f1de4657-4a93-44cd-aadb-62d171dd6793-4442160-hvardany/readline-master
+BUILD_DIR = /Users/amsryan/Desktop/aa/readline-master
 TEXINPUTDIR = $(srcdir)
 
 MAKEINFO    = LANGUAGE= makeinfo

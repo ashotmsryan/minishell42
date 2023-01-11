@@ -32,7 +32,7 @@ datarootdir = ${prefix}/share
 srcdir = .
 VPATH = ..
 topdir = ..
-BUILD_DIR = /Users/hvardany/Desktop/intra-uuid-f1de4657-4a93-44cd-aadb-62d171dd6793-4442160-hvardany/readline-master
+BUILD_DIR = /Users/amsryan/Desktop/aa/readline-master
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -52,7 +52,7 @@ SHELL = /bin/sh
 host_os = darwin18.7.0
 host_vendor = apple
 
-prefix = /Users/hvardany/Desktop/intra-uuid-f1de4657-4a93-44cd-aadb-62d171dd6793-4442160-hvardany/ashhov_readline
+prefix = /Users/amsryan/Desktop/aa/ashhov_readline
 exec_prefix = ${prefix}
 includedir = ${prefix}/include
 bindir = ${exec_prefix}/bin

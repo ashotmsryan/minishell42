@@ -21,7 +21,7 @@ RL_LIBRARY_VERSION = 8.0
 SHELL = /bin/sh
 RM = rm -f
 
-prefix = /Users/hvardany/Desktop/intra-uuid-f1de4657-4a93-44cd-aadb-62d171dd6793-4442160-hvardany/ashhov_readline
+prefix = /Users/amsryan/Desktop/aa/ashhov_readline
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share
@@ -32,7 +32,7 @@ datadir = ${datarootdir}
 
 top_srcdir = ..
 #BUILD_DIR = .
-BUILD_DIR = /Users/hvardany/Desktop/intra-uuid-f1de4657-4a93-44cd-aadb-62d171dd6793-4442160-hvardany/readline-master
+BUILD_DIR = /Users/amsryan/Desktop/aa/readline-master
 installdir = $(datadir)/readline
 
 INSTALL = /usr/bin/install -c
