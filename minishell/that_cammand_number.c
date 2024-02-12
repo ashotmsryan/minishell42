@@ -118,5 +118,5 @@ void	for_that_cammand_number(t_stract *mini,
 		}
 		else
 			func_call_accsess(i, minir_shell);
-	}
+    }
 }

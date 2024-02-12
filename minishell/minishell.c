@@ -40,9 +40,9 @@ int	fork_or_parent_start(t_stract *mini, int i, t_mini_shell *minir_shell)
 	if (when_have_redirect(mini, i, minir_shell) == 1)
 		return (2);
 	if (mini->pipe_number > 1 || minir_shell[i].flag == 0)
-		if (fork_or_parent_start_norm(mini, i, minir_shell) == 1)
+        if (fork_or_parent_start_norm(mini, i, minir_shell) == 1)
 			return (1);
-	if (mini->pipe_number == 1 && minir_shell[i].flag == 1)
+    if (mini->pipe_number == 1 && minir_shell[i].flag == 1)
 	{
 		check_for_command(mini, i, minir_shell);
 	}
@@ -85,6 +85,7 @@ void	start_minishell(t_stract *mini, t_mini_shell *mini_shell)
 	int	i;
 
 	i = 0;
+
 	if (mini && mini->line && l_nlen(mini->line, ' ') != 0)
 	{
 		malloc_start(mini);

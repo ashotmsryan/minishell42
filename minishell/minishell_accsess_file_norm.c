@@ -93,7 +93,7 @@ int	access_func(int i, t_mini_shell *minir_shell, int j)
 	char	*path_bin_all;
 	int		u;
 
-	u = 0;
+	u = 0; 
 	while (minir_shell[i].path_split[j])
 	{
 		path_bin = ft_strjoin(minir_shell[i].path_split[j], "/");

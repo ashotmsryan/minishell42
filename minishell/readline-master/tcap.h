@@ -47,7 +47,7 @@ extern char *UP, *BC;
 extern short ospeed;
 
 extern int tgetent ();
-extern int tgetflag ();
+// extern int tgetflag ();
 extern int tgetnum ();
 extern char *tgetstr ();
 

@@ -14,10 +14,8 @@
 
 int	outpu_1(char *str, t_mini_shell *minir_shell)
 {
-	int	i;
 	int	l;
 
-	i = 1;
 	minir_shell->data.permission = 0;
 	l = set_dolar_changed11(&str[1], minir_shell);
 	if (str[1] == '$' && l == 0)
@@ -35,10 +33,8 @@ int	outpu_1(char *str, t_mini_shell *minir_shell)
 
 int	outpu_2(char *str, t_mini_shell *minir_shell)
 {
-	int	i;
 	int	l;
 
-	i = 2;
 	minir_shell->data.permission = 0;
 	l = set_dolar_changed11(&str[2], minir_shell);
 	if (str[2] == '$' && l == 0)
@@ -57,10 +53,8 @@ int	outpu_2(char *str, t_mini_shell *minir_shell)
 
 int	input_1(char *str, t_mini_shell *minir_shell)
 {
-	int	i;
 	int	l;
 
-	i = 1;
 	minir_shell->data.permission = 0;
 	l = set_dolar_changed11(&str[1], minir_shell);
 	if (str[1] == '$' && l == 0)

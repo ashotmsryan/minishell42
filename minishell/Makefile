@@ -8,15 +8,15 @@ NAME = minishell
 
 CC = cc
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra #-fsanitize=address
 
 SRCS = $(wildcard *.c) $(wildcard parsing_new/*.c) $(wildcard memory/*.c) $(wildcard builtin/*.c)
 
 OBJS = $(patsubst %.c, %.o, $(SRCS))
 
-INCLUDES = -ILibft  -I./ashhov_readline/include
+INCLUDES = -I./libft  -I./ashhov_readline/include
 
-LINKERS	= -L./libft  -L./ashhov_readline/lib -lreadline
+LINKERS	= -L./libft  -L./ashhov_readline/lib -lreadline -ltinfo
 
 LINKERLIB = ./libft/libft.a
 
@@ -25,24 +25,25 @@ LIBFT = ./libft
 RM = rm -f
 
 %.o: %.c
-	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	@$(CC) $(CFLAGS) $(INCLUDES)  -c $< -o $@
 
-# all: readline $(NAME) 
-all: $(NAME) 
-	
+# all: readline $(NAME)
+all: $(NAME)
+
 $(NAME): $(OBJS)
-	@$(MAKE) -C $(LIBFT)
-	@cp $(LINKERLIB) $(NAME)
-	@ar -rcs $(NAME) $(OBJS)
-	@$(CC) $(CFLAGS) $(LINKERS) $(INCLUDES) $(NAME) -o $(NAME)
+	@$(MAKE) -s -C $(LIBFT)
+# @cp $(LINKERLIB) $(OBJS)
+# @ar -rcs libminishell.a $(OBJS)
+	@$(CC) $(CFLAGS) $(INCLUDES) $(OBJS) $(LINKERLIB) $(LINKERS) -o $(NAME)
+#  @$(CC) $(CFLAGS) $(LINKERS) $(INCLUDES) $(NAME) -o $(NAME)
 	@echo $(NONE) $(GREEN)"       >Compiled< $(NAME)" $(NONE)
 
 clean:
-	@$(MAKE) clean -C $(LIBFT)
+	@$(MAKE) clean -s -C $(LIBFT)
 	@$(RM) $(OBJS)
 
 fclean: clean
-	@$(MAKE) fclean -C $(LIBFT)
+	@$(MAKE) fclean -s -C $(LIBFT)
 	@$(RM) $(NAME)
 	@stty sane
 	@echo $(NONE) $(RED)"       >Removed< $(NAME)" $(NONE)

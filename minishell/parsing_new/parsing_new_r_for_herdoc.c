@@ -31,10 +31,8 @@ void	parsing_new_redirect11(int i, t_mini_shell *minir_shell, int len)
 int	parsing_new_r_for_herdoc(int i, t_mini_shell *minir_shell)
 {
 	int	len;
-	int	j;
 
 	len = ft_len_doeble_pars(minir_shell[i].command);
-	j = 0;
 	parsing_new_redirect11(i, minir_shell, len);
 	return (0);
 }

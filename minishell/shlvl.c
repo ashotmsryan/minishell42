@@ -31,11 +31,9 @@ int	changing_shlvl(int i, t_stract *mini, int lvl)
 int	get_shlvl(t_stract *mini, int lvl)
 {
 	int		i;
-	int		j;
 	char	*tmp;
 
 	i = 0;
-	j = 0;
 	while (ft_strncmp0(mini->env[i], "SHLVL", 5) != 0)
 		i++;
 	if (mini->env[i] != NULL)

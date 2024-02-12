@@ -36,7 +36,7 @@ void	cd_fu_b_n(t_stract *mini, int *iflag, int i, t_mini_shell *minir_shell)
 	write (2, "cd: error retrieving current ", 30);
 	write (2, "directory: getcwd: cannot ", 27);
 	write(2, "access parent directories: ", 28);
-	write(2, "No such file or directory\n", 28);
+	write(2, "No such file or directory\n", 27);
 	minir_shell[i].pwd_current = ft_strjoin(ft_getenv
 			("PWD=", i, minir_shell), "..");
 	minir_shell[i].oldpwd = ft_strjoin(ft_getenv

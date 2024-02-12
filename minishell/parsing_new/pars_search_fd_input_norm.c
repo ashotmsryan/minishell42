@@ -20,11 +20,10 @@ void	p_s_fd_o2_2_norm(t_mini_shell *minir_shell)
 		->data.double_right] + 2;
 }
 
-int	p_s_fd_o2_2(t_mini_shell *minir_shell, char *path_file)
+int	p_s_fd_o2_2(t_mini_shell *minir_shell)
 {
 	int		fd;
 
-	path_file = 0;
 	fd = open
 		(minir_shell->data.boable_redirect_output[minir_shell
 			->data.double_right] + 2, O_WRONLY | O_CREAT | O_APPEND, 0644);
@@ -42,9 +41,6 @@ int	p_s_fd_o2_2(t_mini_shell *minir_shell, char *path_file)
 
 int	pars_search_fd_output2(t_mini_shell *minir_shell)
 {
-	char	*path_file;
-
-	path_file = 0;
 	if (ft_strchr(minir_shell->data.boable_redirect_output
 			[minir_shell->data.double_right] + 2, '/') != 0)
 	{
@@ -57,7 +53,7 @@ int	pars_search_fd_output2(t_mini_shell *minir_shell)
 			return (1);
 		}
 	}
-	if (p_s_fd_o2_2(minir_shell, path_file) == 1)
+	if (p_s_fd_o2_2(minir_shell) == 1)
 		return (1);
 	where_output(minir_shell, 2);
 	return (0);

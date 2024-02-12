@@ -28,9 +28,6 @@ void	doeble_point_free(char **str)
 
 void	t_data_int_free1(t_stract *mini)
 {
-	int	i;
-
-	i = 0;
 	mini->fork_main = 0;
 	mini->syntax_error = 0;
 	mini->when_pipe_error = 0;

@@ -31,7 +31,7 @@ PACKAGE_TARNAME = readline
 srcdir = .
 
 top_srcdir = .
-BUILD_DIR = /Users/amsryan/Desktop/aa/readline-master
+BUILD_DIR = /home/amsryan/Desktop/minishell42/minishell/readline-master
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -48,7 +48,7 @@ MV = mv
 
 SHELL = /bin/sh
 
-prefix = /Users/amsryan/Desktop/aa/ashhov_readline
+prefix = /home/amsryan/Desktop/minishell42/minishell/ashhov_readline
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share

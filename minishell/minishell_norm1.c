@@ -68,8 +68,9 @@ int	pipe_read_write(t_stract *mini, t_mini_shell *minir_shell)
 	_stdin = dup(0);
 	while (++i < mini->pipe_number)
 	{
+
 		parsing_1(mini, i, minir_shell);
-		parsing(mini, i, minir_shell);
+		parsing(i, minir_shell);
 	}
 	minir_shell[mini->pipe_number - 1].segmenf_error = mini->syntax_error;
 	if (func_hirdock(mini, minir_shell) == 1)
@@ -88,9 +89,6 @@ int	pipe_read_write(t_stract *mini, t_mini_shell *minir_shell)
 
 void	malloc_start(t_stract *mini)
 {
-	int	i;
-
-	i = 0;
 	mini->line_split_pipe = ft_split_line(mini->line, '|');
 	mini->forks = malloc(sizeof(pid_t) * mini->pipe_number);
 	mini->flag = malloc(sizeof(int) * mini->pipe_number);

@@ -106,10 +106,8 @@ void	herdoc_dollar(char *str, int *z, t_mini_shell *minir_shell)
 void	heredoc_when_output_norm(t_mini_shell *minir_shell, int i, int *jx)
 {
 	int	z;
-	int	j;
 
 	z = 0;
-	j = 0;
 	while (minir_shell[i].data2.built.hd_data
 		&& minir_shell[i].data2.built.hd_data[++(*jx)])
 	{

@@ -37,14 +37,11 @@ int	getnmblen(int n)
 	return (count);
 }
 
-void	kill_all(t_stract *mini, int i, t_mini_shell *minir_shell)
+void	kill_all(t_stract *mini, int j, t_mini_shell *minir_shell)
 {
-	int	j;
-
 	(void)mini;
 	(void)minir_shell;
 	j = -1;
-	i = 0;
 	while (mini->forks[++j] != -1)
 		kill(mini->forks[j], SIGKILL);
 	printf("minishell: fork: Resource temporarily unavailable\n");

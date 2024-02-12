@@ -1,4 +1,4 @@
-prefix=/Users/amsryan/Desktop/aa/ashhov_readline
+prefix=/home/amsryan/Desktop/minishell42/minishell/ashhov_readline
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

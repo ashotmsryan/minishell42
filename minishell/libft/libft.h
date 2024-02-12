@@ -45,7 +45,7 @@ int			ft_strindex(char *s, int x, int y);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp1(const char *s1, const char *s2, size_t n);
 int			ft_strncmp111(const char *s1, const char *s2, size_t n);
-void		clearfree(char **sm, size_t j);
+void		clearfree(char **sm, long j);
 size_t		l_nlen(char const *s, char c);
 size_t		len_till(const char *s, char c);
 char		*norm_sets(const char *s, char c, char *sm);

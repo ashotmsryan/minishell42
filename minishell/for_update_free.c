@@ -14,9 +14,6 @@
 
 void	updata_free_minishell_doubl_a(int j, t_mini_shell *mini_shell)
 {
-	int	i;
-
-	i = 0;
 	free_it(&mini_shell[j].command);
 	free_it(&mini_shell[j].data.redirect_have);
 	free_it(&mini_shell[j].data.heredoc);
@@ -31,15 +28,12 @@ void	updata_free_minishell_doubl_a(int j, t_mini_shell *mini_shell)
 
 static	void	update_free(t_stract *mini)
 {
-	int	i;
-
 	if (mini->line_split_pipe)
 	{
 		free_it(&mini->line_split_pipe);
 		mini->line_split_pipe = 0;
 	}
 	mini->when_pipe_error = 0;
-	i = 0;
 	mini->syntax_error = 0;
 	free(mini->line);
 	mini->line = 0;

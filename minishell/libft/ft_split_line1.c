@@ -55,11 +55,9 @@ int	malloc_line(char *s, char c)
 static char	*sets1(char *s, size_t *n, char c)
 {
 	size_t	i;
-	size_t	j;
 	size_t	k;
 	char	*sm;
 
-	j = 0;
 	i = 0;
 	k = *n;
 	i = malloc_line(s, c);
@@ -73,7 +71,7 @@ static char	*sets1(char *s, size_t *n, char c)
 
 char	**split_norm_1(char **sm, char c, size_t i, char *s)
 {
-	size_t	j;
+	long	j;
 
 	j = 0;
 	while (s && s[i])

@@ -78,7 +78,7 @@ static size_t	nlen(char const *s, char c)
 	return (n);
 }
 
-void	clearfree(char **sm, size_t j)
+void	clearfree(char **sm, long j)
 {
 	while (j >= 0)
 		free(sm[j--]);
@@ -89,7 +89,7 @@ char	**ft_split(char const *s, char c)
 {
 	char	**sm;
 	size_t	i;
-	size_t	j;
+	long	j;
 
 	if (!s)
 		return (NULL);

@@ -33,12 +33,10 @@ int	count(int k)
 
 char	*ft_itoa0(int n)
 {
-	long			i;
 	long			h;
 	unsigned int	t;
 	char			*s;
 
-	i = 0;
 	h = count(n);
 	s = (char *)malloc(h + 1);
 	t = n;

@@ -22,7 +22,7 @@ topdir = ..
 srcdir = .
 
 
-prefix = /Users/amsryan/Desktop/aa/ashhov_readline
+prefix = /home/amsryan/Desktop/minishell42/minishell/ashhov_readline
 
 datarootdir = ${prefix}/share
 
@@ -49,7 +49,7 @@ RM = rm -f
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 
-BUILD_DIR = /Users/amsryan/Desktop/aa/readline-master
+BUILD_DIR = /home/amsryan/Desktop/minishell42/minishell/readline-master
 TEXINPUTDIR = $(srcdir)
 
 MAKEINFO    = LANGUAGE= makeinfo

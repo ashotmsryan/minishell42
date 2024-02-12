@@ -65,7 +65,7 @@ void	func_null(t_stract *mini, char **env)
 	func_null_new_for_start1(mini);
 	func_null_new_for_start2(mini);
 	func_null_new_for_data2_start3(mini);
-	mini->path = getenv("PATH=");
+	mini->path = getenv("PATH");
 	mini->env = env_new(env);
 	mini->data2.env = mini->env;
 	mini->path_split = ft_split(mini->path, ':');

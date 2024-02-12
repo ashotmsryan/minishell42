@@ -21,7 +21,7 @@ RL_LIBRARY_VERSION = 8.0
 SHELL = /bin/sh
 RM = rm -f
 
-prefix = /Users/amsryan/Desktop/aa/ashhov_readline
+prefix = /home/amsryan/Desktop/minishell42/minishell/ashhov_readline
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share
@@ -32,7 +32,7 @@ datadir = ${datarootdir}
 
 top_srcdir = ..
 #BUILD_DIR = .
-BUILD_DIR = /Users/amsryan/Desktop/aa/readline-master
+BUILD_DIR = /home/amsryan/Desktop/minishell42/minishell/readline-master
 installdir = $(datadir)/readline
 
 INSTALL = /usr/bin/install -c

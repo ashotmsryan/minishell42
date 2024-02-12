@@ -35,12 +35,10 @@ void	flag( int i, t_mini_shell *minir_shell)
 	}
 }
 
-void	parsing(t_stract *mini, int i, t_mini_shell *minir_shell)
+void	parsing(int i, t_mini_shell *minir_shell)
 {
-	int		j;
 	char	**command;
 
-	j = *mini->flag;
 	command = 0;
 	command = ft_split_line1(minir_shell[i].shell_line_split_pipe, ' ');
 	minir_shell[i].command = ft_strdupdoub(command);

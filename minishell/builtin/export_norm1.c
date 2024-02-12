@@ -78,11 +78,9 @@ void	add_in_env_plus(t_data2 *data, char *s, t_stract *mini)
 void	add_in_env(t_data2 *data, char *s, t_stract *mini)
 {
 	int		i;
-	int		j;
 	char	**tmp;
 
 	i = 0;
-	j = ft_strlen0(s);
 	tmp = (char **)malloc ((spllen(data->env) + 2) * sizeof(char *));
 	while (s && s[i] && s[i] != '=')
 		i++;

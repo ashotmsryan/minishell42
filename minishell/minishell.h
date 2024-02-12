@@ -19,6 +19,8 @@
 # include <sys/ioctl.h>
 # include <termios.h>
 # include <signal.h>
+# include <sys/types.h>
+# include <sys/wait.h>
 # include <readline/readline.h>
 # include <readline/history.h>
 # include <fcntl.h>
@@ -151,7 +153,7 @@ char	*ft_getenv(char *search_key, int i, t_mini_shell *minir_shell);
 char	**env_new(char **env);
 void	loop_between_pipe(t_stract *mini, int i);
 void	echo_func( int i, t_mini_shell *minir_shell);
-void	parsing(t_stract *mini, int i, t_mini_shell *minir_shell);
+void	parsing(int i, t_mini_shell *minir_shell);
 void	for_that_cammand_number(t_stract *mini, int i,
 			t_mini_shell *minir_shell);
 char	*spease_set_unset(char *str, t_stract *mini,

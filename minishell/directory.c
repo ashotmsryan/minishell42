@@ -23,9 +23,6 @@ int	is_minishell(char *s)
 
 int	if_directory_norm(int i, t_mini_shell *minir_shell, DIR	*pdir)
 {
-	int	j;
-
-	j = 0;
 	if ((pdir && ft_strchr(minir_shell[i].data.pipe_split[0], '/'))
 		|| (pdir && is_minishell(minir_shell[i].data.pipe_split[0])))
 	{
@@ -43,7 +40,6 @@ int	if_directory_norm(int i, t_mini_shell *minir_shell, DIR	*pdir)
 int	if_directory(int i, t_mini_shell *minir_shell)
 {
 	DIR	*pdir;
-
 	pdir = opendir(minir_shell[i].data.pipe_split[0]);
 	if (minir_shell[i].data.pipe_split[0]
 		&& if_directory_norm(i, minir_shell, pdir) && pdir)

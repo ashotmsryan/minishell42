@@ -544,7 +544,7 @@ _rl_init_terminal_io (const char *terminal_name)
   if (!_rl_term_cr)
     _rl_term_cr = "\r";
 
-  _rl_term_autowrap = tgetflag ("am") && tgetflag ("xn");
+//   _rl_term_autowrap = tgetflag ("am") && tgetflag ("xn");
 
   /* Allow calling application to set default height and width, using
      rl_set_screen_size */
@@ -559,7 +559,7 @@ _rl_init_terminal_io (const char *terminal_name)
 
   /* Check to see if this terminal has a meta key and clear the capability
      variables if there is none. */
-  term_has_meta = tgetflag ("km") != 0;
+//   term_has_meta = tgetflag ("km") != 0;
   if (term_has_meta == 0)
     _rl_term_mm = _rl_term_mo = (char *)NULL;
 #endif /* !__MSDOS__ */

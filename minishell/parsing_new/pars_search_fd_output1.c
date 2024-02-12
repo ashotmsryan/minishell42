@@ -96,9 +96,6 @@ int	pars_sr_fd_output(t_mini_shell *minir_shell)
 
 int	pars_search_fd_output1(t_mini_shell *minir_shell)
 {
-	char	*path_file;
-
-	path_file = 0;
 	if (ft_strchr(minir_shell->data.redirect_output[minir_shell
 				->data.right] + 1, '/') != 0)
 	{
